@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryDark"
+    tools:context="dev.edmt.qrcodecamera.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <SurfaceView
+            android:id="@+id/cameraPreview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/FileChoose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10sp"
+            android:background="@drawable/fields"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="FileChooseF"
+            android:text="Проверить права"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:id="@+id/UploadData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/fields"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="uploadData"
+            android:text="Загрузить базу"
+            android:textColor="@color/colorAccent"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/SearchDeff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:background="@drawable/fields"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="searchDeff"
+            android:text="Поиск"
+            android:textColor="@color/colorAccent"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Нажмите Проверить права"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:textSize="25sp"
+            android:textColor="@color/colorAccent"/>
+
+
+        <TextView
+            android:id="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:textSize="25sp"
+            android:textColor="@color/colorAccent"/>
+
+
+        <TextView
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:textSize="25sp"
+            android:textColor="@color/colorAccent"/>
+
+
+        <TextView
+            android:id="@+id/four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text=""
+            android:textSize="25sp"
+            android:textColor="@color/colorAccent"/>
+
+
+        <Button
+            android:id="@+id/button22"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10sp"
+            android:background="@drawable/fields"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="readRecord"
+            android:visibility="gone"
+
+            android:text="Поиск"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</RelativeLayout>
